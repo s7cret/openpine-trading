@@ -9,6 +9,7 @@
     "url": "git+https://github.com/s7cret/openpine-trading.git"
   },
   "files": [
+    "src/",
     "openclaw.plugin.json",
     ".codex-plugin/",
     "skills/",
@@ -16,7 +17,13 @@
     "README.md",
     "LICENSE"
   ],
+  "peerDependencies": {
+    "openclaw": ">=2026.5.12"
+  },
   "openclaw": {
+    "extensions": [
+      "./src/index.js"
+    ],
     "compat": {
       "pluginApi": ">=2026.5.12"
     },

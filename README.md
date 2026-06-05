@@ -1,6 +1,6 @@
-# OpenPine Skill
+# OpenPine Trading
 
-OpenPine Skill is a ready-to-use OpenClaw trading skill for running Pine Script v6 strategies through the OpenPine stack, watching generated orders, and approving trades from chat.
+OpenPine Trading is a ready-to-use OpenClaw trading skill for running Pine Script v6 strategies through the OpenPine stack, watching generated orders, and approving trades from chat.
 
 It is built around a complete Pine v6 interpreter pipeline: Pine2AST parses Pine source, AST2Python turns the normalized AST into Python, PineLib provides TradingView-like runtime behavior, Backtest Engine executes strategies on historical candles, and OpenPine connects the result to paper, testnet, or live trading workflows.
 

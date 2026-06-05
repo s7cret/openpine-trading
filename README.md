@@ -1,16 +1,16 @@
 # OpenPine Trading
 
-OpenPine Trading is a ready-to-use OpenClaw trading skill for running Pine Script v6 strategies through the OpenPine stack, watching generated orders, and approving trades from chat.
+OpenPine Trading is a ready-to-use OpenClaw code plugin for running Pine Script v6 strategies through the OpenPine stack, watching generated orders, and approving trades from chat.
 
 It is built around a complete Pine v6 interpreter pipeline: Pine2AST parses Pine source, AST2Python turns the normalized AST into Python, PineLib provides TradingView-like runtime behavior, Backtest Engine executes strategies on historical candles, and OpenPine connects the result to paper, testnet, or live trading workflows.
 
-The skill gives an operator a practical command surface for the whole loop: import a Pine strategy, compile it, backtest it, schedule it, monitor signals, and approve or resize each order before execution.
+The plugin gives an operator a practical command surface for the whole loop: import a Pine strategy, compile it, backtest it, schedule it, monitor signals, and approve or resize each order before execution.
 
 <p align="center">
   <img src="assets/openpine-telegram-trade-signal.jpg" alt="OpenPine Telegram trade approval signal" width="420">
 </p>
 
-## What This Skill Does
+## What This Plugin Does
 
 - Works with OpenPine as the execution gateway for Pine strategies.
 - Treats OpenPine as a ready interpreter for Pine Script v6-style strategy code.
@@ -21,6 +21,7 @@ The skill gives an operator a practical command surface for the whole loop: impo
 - Lets the operator approve the default amount with a button.
 - Lets the operator override amount directly from chat before approval.
 - Keeps local paths, scripts, and internal runtime details out of user-facing trade messages.
+- Ships as a ClawHub-compatible code plugin with `.codex-plugin/plugin.json`.
 - Supports safety-first trading: generated orders are visible and require explicit approval before exchange execution.
 
 ## Why It Matters
@@ -49,7 +50,28 @@ OpenPine is not just a notification bot. It is an orchestration layer around a f
 - `optimizer` can run parameter search over backtest configurations.
 - `openpine` stores sources, artifacts, backtests, orders, state, and execution events.
 
-This skill sits on top of that stack and exposes the trading operator workflow.
+This plugin sits on top of that stack and exposes the trading operator workflow.
+
+## Plugin Package Layout
+
+```text
+openpine-trading/
+├── .codex-plugin/plugin.json
+├── skills/openpine-trading/SKILL.md
+├── assets/openpine-telegram-trade-signal.jpg
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
+For ClawHub publishing from GitHub:
+
+- Plugin name: `openpine-trading`
+- Display name: `OpenPine Trading`
+- Package type: `Code plugin`
+- GitHub repository: `s7cret/openpine-trading`
+- Tag or branch: `main`
+- Package path: leave empty or use `.`
 
 ## Example Trade Signal
 
@@ -92,7 +114,7 @@ The skill is designed for controlled execution:
 
 ## Repository Scope
 
-This repository is the public skill description and packaging surface. The OpenPine runtime and interpreter stack live in their own repositories:
+This repository is the public plugin package and publishing surface. The OpenPine runtime and interpreter stack live in their own repositories:
 
 - `openpine`
 - `pine2ast`

@@ -1,0 +1,23 @@
+{
+  "name": "openpine-trading",
+  "version": "0.1.0",
+  "description": "OpenPine Trading plugin for Pine Script v6 strategy approvals.",
+  "author": {
+    "name": "S7cret"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "OpenPine Trading",
+    "shortDescription": "Operate Pine Script v6 strategies through OpenPine.",
+    "longDescription": "OpenPine Trading turns OpenPine's Pine Script v6 interpreter stack into a chat-operated trading workflow: compile strategies, run backtests, monitor order intents, and approve or resize trades before execution.",
+    "developerName": "S7cret",
+    "category": "Trading",
+    "capabilities": [
+      "Pine Script v6 strategy interpretation",
+      "OpenPine strategy operations",
+      "Telegram trade approvals",
+      "Human-in-the-loop order execution"
+    ],
+    "defaultPrompt": "Help me operate OpenPine Trading: compile a Pine v6 strategy, run a backtest, monitor signals, and approve trades safely."
+  }
+}

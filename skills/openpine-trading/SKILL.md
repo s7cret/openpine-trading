@@ -1,10 +1,15 @@
-# OpenPine Trading Skill
+---
+name: openpine-trading
+description: Operate OpenPine Pine Script v6 strategy compilation, backtests, signal monitoring, and trade approvals.
+---
+
+# OpenPine Trading
 
 Use this skill when the user wants to compile, backtest, schedule, monitor, approve, resize, or reject Pine Script v6 strategy trades through OpenPine.
 
 ## Core Identity
 
-OpenPine is a ready Pine Script v6 interpreter and trading automation gateway. The skill is the operator layer on top of that gateway: it turns compiled Pine strategy signals into clear Telegram approval cards and controlled execution actions.
+OpenPine is a ready Pine Script v6 interpreter and trading automation gateway. This plugin provides the operator skill on top of that gateway: it turns compiled Pine strategy signals into clear Telegram approval cards and controlled execution actions.
 
 ## Capabilities
 

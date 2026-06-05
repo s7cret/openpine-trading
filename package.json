@@ -9,6 +9,7 @@
     "url": "git+https://github.com/s7cret/openpine-trading.git"
   },
   "files": [
+    "openclaw.plugin.json",
     ".codex-plugin/",
     "skills/",
     "assets/",

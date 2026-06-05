@@ -7,7 +7,7 @@ It is built around a complete Pine v6 interpreter pipeline: Pine2AST parses Pine
 The plugin gives an operator a practical command surface for the whole loop: import a Pine strategy, compile it, backtest it, schedule it, monitor signals, and approve or resize each order before execution.
 
 <p align="center">
-  <img src="assets/openpine-telegram-trade-signal.jpg" alt="OpenPine Telegram trade approval signal" width="420">
+  <img src="https://raw.githubusercontent.com/s7cret/openpine-trading/05b10ee722783de1e9b800344796ce30cf86e5b3/assets/openpine-telegram-trade-signal.jpg" alt="OpenPine Telegram trade approval signal" width="420">
 </p>
 
 ## What This Plugin Does

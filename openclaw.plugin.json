@@ -2,7 +2,7 @@
   "id": "openpine-trading",
   "name": "OpenPine Trading",
   "description": "Operate Pine Script v6 strategies through OpenPine.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "configSchema": {
     "type": "object",
     "properties": {},

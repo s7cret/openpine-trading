@@ -56,8 +56,11 @@ This plugin sits on top of that stack and exposes the trading operator workflow.
 
 ```text
 openpine-trading/
+├── package.json
+├── openclaw.plugin.json
 ├── .codex-plugin/plugin.json
 ├── skills/openpine-trading/SKILL.md
+├── src/index.js
 ├── assets/openpine-telegram-trade-signal.jpg
 ├── README.md
 ├── LICENSE

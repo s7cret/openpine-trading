@@ -1,6 +1,6 @@
 {
   "name": "openpine-trading",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "OpenPine Trading plugin for Pine Script v6 strategy approvals.",
   "author": {
     "name": "S7cret"
